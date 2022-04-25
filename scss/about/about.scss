@@ -1,0 +1,77 @@
+.about{
+
+    .about-banner{
+
+        height: 380px;
+        max-width: $header-content-width;
+
+        background-color: $yellow-color;
+
+        margin: 0 auto;
+        margin-top: 85px;
+
+        background-image: linear-gradient(rgba($yellow-color, .8),rgba($yellow-color, .8)),url(../images/about.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-info{
+        max-width: $header-content-width;
+        height: 200px;
+
+        // background-color: green;
+
+        margin: 0 auto;
+
+        margin-top: -50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+
+        .info-header{
+           
+
+            .header-text{
+                font-family: $main-font;
+                font-size: 25px;
+
+                margin-bottom: 10px;
+            }
+
+            hr{
+                width: 150px;
+
+                height: 2px;
+                background-color: $black-color;
+                border: 1px solid;
+            }
+
+        }
+
+        .info-description{
+            max-width: $header-content-width;
+            height: 100px;
+
+            margin: 0 auto;
+
+            font-family: $italic-font;
+        }
+    }
+}
+
+@media all and (max-width: 1000px){
+    .about{
+        .about-info{
+            align-items: center;
+
+
+            .info-description{
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+.contact{
+
+    max-width: $header-content-width;
+    
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    .contact-header{
+        
+        margin-top: 60px;
+
+        .contact-title{
+            font-family: $main-font;
+            font-size: 30px;
+
+        }
+
+        hr {
+            width: 150px;
+            margin-top: -15px;
+    
+            border: 1px solid;
+    
+            margin-bottom: -50px;
+        }
+    }
+    
+
+
+    .container{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+       // margin-top: 10px;
+        .map{
+            height: 442px;
+            width: 400px;
+
+           // background-color: blue;
+
+            background-image: url('../images/map.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .form{
+            height: 523px;
+            max-width: 529px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            // justify-content: space-between;
+
+            margin-top: 80px;
+
+            input{
+                margin-bottom: 21px;
+
+                width: 529px;
+                height: 60px;
+    
+                padding-left: 11px;
+
+                background-color: #e6e3e3;
+    
+                // border-color: $site-blue;
+                border: none;
+            }
+
+            .message{
+                height: 200px;
+                margin-bottom: 0;
+            }
+
+            button{
+                //position: absolute;
+               display: block;
+               //margin: $center;
+    
+               margin-top: 20px;
+    
+               background-color: $pink-color;
+    
+               width: 167px;
+               height: 60px;
+    
+               text-align: center;
+               border: none;
+               color: $white-color;
+    
+               &:hover{
+                   cursor: pointer;
+               }
+           }
+
+            
+        }
+    }
+}
+
+@media all and (max-width: 1000px){
+    .contact{
+        .contact-header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container{
+            flex-direction: column;
+
+            .map{
+                margin-top: 50px;
+            }
+
+            .form{
+
+                .message{
+                    margin-bottom: 20px;
+                }
+                button{
+                   
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 650px) {
+  .contact{
+      .container{
+          .form{
+              max-width: 450px;
+              align-items: center;
+
+              input{
+                  width: 450px;
+              }
+          }
+      }
+  }
+}

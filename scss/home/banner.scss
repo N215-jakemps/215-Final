@@ -1,0 +1,272 @@
+
+.home{
+    max-width: $site-width;
+
+    margin: 0 auto;
+
+    .home-banner{
+        height: 500px;
+        max-width: $site-width;
+        
+    
+        //background-color: yellow;
+    
+        background-image: linear-gradient(rgba($yellow-color, .8),rgba($yellow-color, .8)),url(../images/home-hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        margin-top: -100px;
+
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1{
+            font-family: $main-font;
+            color: white;
+            font-size: 40px;
+
+            margin-top: 60px;
+        }
+        .subheading{
+            font-family: $main-font;
+            color: $pink-color;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+        p{
+            width: 416px;
+            color: white;
+            text-align: center;
+
+            margin-bottom: 50px;
+
+        }
+        .button {
+            
+            display: block;
+            
+    
+            background-color: $pink-color;
+
+    
+            width: 121px;
+            height: 40px;
+    
+            text-align: center;
+            border: none;
+            color: $yellow-color;
+
+            padding-top: 10px;
+    
+            &:hover{
+                cursor: pointer;
+            }
+    
+            
+        }
+
+    }
+    
+    .ceo-quote{
+        height: 300px;
+        max-width: 780px;
+
+        margin: 0 auto;
+
+        //background-color: grey;
+
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+
+        .quote{
+            font-family: $main-font;
+            font-size: 15px;
+            color: $yellow-color;
+
+            padding-bottom: 20px;
+        }
+
+        .ceo{
+
+            font-size: 15px;
+            font-family: $main-font;
+            color: $pink-color;
+
+            padding-bottom: -50px;
+        }
+        .title{
+
+            color: #A8A8A8;
+            font-size: 10px;
+            font-family: $main-font;
+        }
+    }
+
+    .upcoming-events{
+        min-height: 320px;
+        
+
+        background-color: purple;
+
+      
+
+        display: flex;
+        align-items: left;
+        justify-content: center;
+
+        .upcoming-events-width{
+            max-width: 1200px;
+            min-height: 220px;
+            
+            margin-top: 50px;
+
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            flex-direction: column;
+    
+
+            .upcoming{
+            
+                color: white;
+    
+                font-family: $main-font;
+                font-size: 25px;
+            }
+            hr{
+                width: 392px;
+            }
+            
+            .events{
+
+                margin-top: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a{
+                    text-decoration: none;
+
+                    .event {
+                        width: 223px;
+                        height: 158px;
+            
+                        //background-color: green;
+        
+                        display: flex;
+                        align-items: top;
+                        justify-content: space-between;
+                        flex-direction: row;
+        
+                        .date-released{
+                            height: 60px;
+                            width: 60px;
+            
+                            
+                
+                            background-color: $pink-color;
+                
+                            color: $white-color;
+                
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            //justify-content: space-evenly;
+                
+                            .one{
+                                font-size: 22px;
+                                font-weight: bold;
+                
+                                z-index: 98;
+                                margin-bottom: -1px;
+                                margin-top: 10px;
+                            }
+                            .two{
+                                font-size: 12px;
+                            }
+                
+                        }
+        
+                        .blog-info{
+                            width: 140px;
+                            //background-color: blue;
+                            .blog-title{
+                                width: 140px;
+                                height: 34px;
+        
+                                color: $white-color;
+        
+                                margin-bottom: 12px;
+                            }
+        
+                            .blog-description{
+        
+                                width: 140px;
+                                height: 78px;
+        
+                                color: $pink-color;
+        
+                            }
+                        }
+        
+        
+                    }
+                }
+            // .events-2 {
+            //     width: 223px;
+            //     height: 158px;
+    
+            //     background-color: green;
+            // }
+            // .events-3 {
+            //     width: 223px;
+            //     height: 158px;
+    
+            //     background-color: green;
+            // }
+            // .events-4 {
+            //     width: 223px;
+            //     height: 158px;
+    
+            //     background-color: green;
+            // }
+            // .events-5 {
+            //     width: 223px;
+            //     height: 158px;
+    
+            //     background-color: green;
+            // }
+            }
+
+        }
+    }
+}
+
+
+@media all and (max-width: 1150px) {
+    .home{
+        .ceo-quote{
+            align-items: center;
+            .quote{
+                text-align: center;
+                padding: 10px;
+            }
+        }
+        .upcoming-events{
+            .upcoming-events-width{
+                .events{
+                    flex-direction: column;
+                }
+            }
+
+        }
+    }
+}

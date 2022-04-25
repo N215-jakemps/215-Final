@@ -1,0 +1,40 @@
+
+
+$header-content-width: 980px;
+$site-width: 1280px;
+
+$pink-color: #EE4367;
+$pink-highlight-color: #a22c46;
+
+$yellow-color: #FFD140;
+$yellow-highlight-color: #b7962d;
+
+$white-color: #fff;
+$black-color: #000;
+
+$purple-color: #540D6E;
+$purple-highlight-color: #3a084c;
+
+$dark-teal-color: #08AD69;
+$dt-hightlight-color: #067044;
+
+$light-teal-color: #3BCEAB;
+$lt-highlight-color: #278872;
+
+
+
+
+
+@font-face {
+    font-family: "Futura";
+    src: url(../lib/futura/futura\ light\ bt.ttf);
+}
+
+$main-font: "Futura";
+
+@font-face {
+    font-family: "Futura Italic";
+    src: url(../lib/futura/Futura\ Light\ Italic\ font.ttf);
+}
+
+$italic-font: "Futura Italic";

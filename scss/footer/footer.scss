@@ -1,0 +1,141 @@
+footer{
+    max-width: $site-width;
+    min-height: 455px;
+
+    background-color: $pink-color;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .footer-logo{
+        width: 92px;
+        height: 42px;
+        
+        border: 2px;
+        border-color: $white-color;
+        border-style: solid;
+
+        .text {
+            color: $white-color;
+            text-align: center;
+        }
+    }
+
+    .footer-contact{
+        color: white;
+        font-size: 9pt;
+        font-family: $main-font;
+    }
+
+    .footer-search{
+        width: 700px;
+        height: 60px;
+
+        // background-color: blue;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .search{
+            input{
+                height: 60px;
+                width: 529px;
+
+                background-color: #F56B88;
+                border: none;
+
+                
+
+               
+            }
+            ::placeholder{
+                color: $white-color;
+                opacity: .8;
+                padding-left: 10px;
+            }
+        }
+
+        .subscribe{
+            width: 167px;
+            height: 60px;
+            background-color: white;
+
+           
+
+            p{
+                font-size: 14pt;
+                font-family: $main-font;
+                color: $pink-color;
+
+                text-align: center;
+                margin-top: 17px;
+            }
+        }
+    }
+
+    .footer-socials{
+        height: 31px;
+        width: 150px;
+
+       //background-color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        // .facebook{
+        //     height: 30px;
+        //     width: 30px;
+        //     background-color: black;
+        // }
+        // .instagram{
+        //     height: 30px;
+        //     width: 30px;
+        //     background-color: black;
+        // }
+        // .twitter{
+        //     height: 30px;
+        //     width: 30px;
+        //     background-color: black;
+        // }
+
+        i{
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    .footer-copyright{
+        width: 250px;
+        height: 14px;
+
+        color: white;
+
+        margin-bottom: 36px;
+
+        font-size: 12px;
+        font-family: $main-font;
+    }
+}
+
+
+@media all and (max-width: 750px){
+    footer{
+
+        .footer-search{
+            flex-direction: column;
+
+            .search{
+                input{
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,1008 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  min-height: calc(100vh - 100px);
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(../lib/futura/futura\ light\ bt.ttf);
+}
+@font-face {
+  font-family: "Futura Italic";
+  src: url(../lib/futura/Futura\ Light\ Italic\ font.ttf);
+}
+.black-header {
+  height: 100px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+.black-header .row-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.black-header .row-one .nav-logo {
+  width: 92px;
+  height: 42px;
+  border: 2px;
+  border-color: #000;
+  border-style: solid;
+}
+.black-header .row-one .nav-logo .text {
+  color: #000;
+  text-align: center;
+}
+.black-header .row-one .nav-links {
+  height: inherit;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.black-header .row-one .nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-family: "Futura";
+}
+.black-header .row-one .nav-links span {
+  color: #EE4367;
+}
+.black-header .row-two hr {
+  max-width: 980px;
+  border-width: 1px;
+  border-color: #000;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media all and (max-width: 1000px) {
+  .black-header {
+    max-width: 700px;
+  }
+}
+@media all and (max-width: 650px) {
+  .black-header .row-one {
+    justify-content: space-evenly;
+  }
+}
+.white-header {
+  height: 100px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+.white-header .row-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.white-header .row-one .nav-logo {
+  width: 92px;
+  height: 42px;
+  border: 2px;
+  border-color: #fff;
+  border-style: solid;
+}
+.white-header .row-one .nav-logo .text {
+  color: #fff;
+  text-align: center;
+}
+.white-header .row-one .nav-links {
+  height: inherit;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.white-header .row-one .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Futura";
+}
+.white-header .row-one .nav-links span {
+  color: #EE4367;
+}
+.white-header .row-two hr {
+  max-width: 980px;
+  border-width: 1px;
+  border-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media all and (max-width: 1000px) {
+  .white-header {
+    max-width: 700px;
+  }
+}
+@media all and (max-width: 650px) {
+  .white-header .row-one {
+    justify-content: space-evenly;
+  }
+}
+footer {
+  max-width: 1280px;
+  min-height: 455px;
+  background-color: #EE4367;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+footer .footer-logo {
+  width: 92px;
+  height: 42px;
+  border: 2px;
+  border-color: #fff;
+  border-style: solid;
+}
+footer .footer-logo .text {
+  color: #fff;
+  text-align: center;
+}
+footer .footer-contact {
+  color: white;
+  font-size: 9pt;
+  font-family: "Futura";
+}
+footer .footer-search {
+  width: 700px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-search .search input {
+  height: 60px;
+  width: 529px;
+  background-color: #F56B88;
+  border: none;
+}
+footer .footer-search .search ::placeholder {
+  color: #fff;
+  opacity: 0.8;
+  padding-left: 10px;
+}
+footer .footer-search .subscribe {
+  width: 167px;
+  height: 60px;
+  background-color: white;
+}
+footer .footer-search .subscribe p {
+  font-size: 14pt;
+  font-family: "Futura";
+  color: #EE4367;
+  text-align: center;
+  margin-top: 17px;
+}
+footer .footer-socials {
+  height: 31px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .footer-socials i {
+  color: white;
+  font-size: 25px;
+}
+footer .footer-copyright {
+  width: 250px;
+  height: 14px;
+  color: white;
+  margin-bottom: 36px;
+  font-size: 12px;
+  font-family: "Futura";
+}
+
+@media all and (max-width: 750px) {
+  footer .footer-search {
+    flex-direction: column;
+  }
+  footer .footer-search .search input {
+    width: 450px;
+  }
+}
+.home {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.home .home-banner {
+  height: 500px;
+  max-width: 1280px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -100px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home .home-banner h1 {
+  font-family: "Futura";
+  color: white;
+  font-size: 40px;
+  margin-top: 60px;
+}
+.home .home-banner .subheading {
+  font-family: "Futura";
+  color: #EE4367;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.home .home-banner p {
+  width: 416px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.home .home-banner .button {
+  display: block;
+  background-color: #EE4367;
+  width: 121px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  color: #FFD140;
+  padding-top: 10px;
+}
+.home .home-banner .button:hover {
+  cursor: pointer;
+}
+.home .ceo-quote {
+  height: 300px;
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.home .ceo-quote .quote {
+  font-family: "Futura";
+  font-size: 15px;
+  color: #FFD140;
+  padding-bottom: 20px;
+}
+.home .ceo-quote .ceo {
+  font-size: 15px;
+  font-family: "Futura";
+  color: #EE4367;
+  padding-bottom: -50px;
+}
+.home .ceo-quote .title {
+  color: #A8A8A8;
+  font-size: 10px;
+  font-family: "Futura";
+}
+.home .upcoming-events {
+  min-height: 320px;
+  background-color: purple;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+.home .upcoming-events .upcoming-events-width {
+  max-width: 1200px;
+  min-height: 220px;
+  margin-top: 50px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.home .upcoming-events .upcoming-events-width .upcoming {
+  color: white;
+  font-family: "Futura";
+  font-size: 25px;
+}
+.home .upcoming-events .upcoming-events-width hr {
+  width: 392px;
+}
+.home .upcoming-events .upcoming-events-width .events {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .upcoming-events .upcoming-events-width .events a {
+  text-decoration: none;
+}
+.home .upcoming-events .upcoming-events-width .events a .event {
+  width: 223px;
+  height: 158px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.home .upcoming-events .upcoming-events-width .events a .event .date-released {
+  height: 60px;
+  width: 60px;
+  background-color: #EE4367;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .upcoming-events .upcoming-events-width .events a .event .date-released .one {
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 98;
+  margin-bottom: -1px;
+  margin-top: 10px;
+}
+.home .upcoming-events .upcoming-events-width .events a .event .date-released .two {
+  font-size: 12px;
+}
+.home .upcoming-events .upcoming-events-width .events a .event .blog-info {
+  width: 140px;
+}
+.home .upcoming-events .upcoming-events-width .events a .event .blog-info .blog-title {
+  width: 140px;
+  height: 34px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.home .upcoming-events .upcoming-events-width .events a .event .blog-info .blog-description {
+  width: 140px;
+  height: 78px;
+  color: #EE4367;
+}
+
+@media all and (max-width: 1150px) {
+  .home .ceo-quote {
+    align-items: center;
+  }
+  .home .ceo-quote .quote {
+    text-align: center;
+    padding: 10px;
+  }
+  .home .upcoming-events .upcoming-events-width .events {
+    flex-direction: column;
+  }
+}
+.contact {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.contact .contact-header {
+  margin-top: 60px;
+}
+.contact .contact-header .contact-title {
+  font-family: "Futura";
+  font-size: 30px;
+}
+.contact .contact-header hr {
+  width: 150px;
+  margin-top: -15px;
+  border: 1px solid;
+  margin-bottom: -50px;
+}
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .container .map {
+  height: 442px;
+  width: 400px;
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact .container .form {
+  height: 523px;
+  max-width: 529px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 80px;
+}
+.contact .container .form input {
+  margin-bottom: 21px;
+  width: 529px;
+  height: 60px;
+  padding-left: 11px;
+  background-color: #e6e3e3;
+  border: none;
+}
+.contact .container .form .message {
+  height: 200px;
+  margin-bottom: 0;
+}
+.contact .container .form button {
+  display: block;
+  margin-top: 20px;
+  background-color: #EE4367;
+  width: 167px;
+  height: 60px;
+  text-align: center;
+  border: none;
+  color: #fff;
+}
+.contact .container .form button:hover {
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+  .contact .contact-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact .container .map {
+    margin-top: 50px;
+  }
+  .contact .container .form .message {
+    margin-bottom: 20px;
+  }
+  .contact .container .form button {
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 650px) {
+  .contact .container .form {
+    max-width: 450px;
+    align-items: center;
+  }
+  .contact .container .form input {
+    width: 450px;
+  }
+}
+.blog {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.blog .blog-header {
+  margin-top: 60px;
+}
+.blog .blog-header .blog-header-title {
+  font-family: "Futura";
+  font-size: 30px;
+}
+.blog .blog-header hr {
+  width: 75px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  border: 1px solid;
+}
+.blog .row1 {
+  max-width: 980px;
+  min-height: 257px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog .row1 a {
+  text-decoration: none;
+}
+.blog .row1 a .collection {
+  width: 460px;
+  height: 257px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog .row1 a .collection .date-released {
+  height: 60px;
+  width: 60px;
+  margin-top: -197px;
+  background-color: #EE4367;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog .row1 a .collection .date-released .one {
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 98;
+  margin-bottom: -1px;
+  margin-top: 10px;
+}
+.blog .row1 a .collection .date-released .two {
+  font-size: 12px;
+}
+.blog .row1 a .collection .blog-info {
+  width: 380px;
+  height: 257px;
+}
+.blog .row1 a .collection .blog-info .blog-image {
+  height: 140px;
+  width: 380px;
+  margin-bottom: 20px;
+  background-image: url("../images/blog.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog .row1 a .collection .blog-info .blog-title {
+  height: 22px;
+  min-width: 245px;
+  margin-bottom: 10px;
+}
+.blog .row1 a .collection .blog-info .blog-title p {
+  font-size: 15px;
+  font-family: "Futura";
+  color: #000;
+}
+.blog .row1 a .collection .blog-info .blog-description {
+  height: 64px;
+  width: 380px;
+}
+.blog .row1 a .collection .blog-info .blog-description p {
+  font-size: 13px;
+  font-family: "Futura";
+  color: #000;
+}
+
+@media all and (max-width: 1000px) {
+  .blog .blog-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog .row1 {
+    flex-direction: column;
+  }
+}
+.about .about-banner {
+  height: 380px;
+  max-width: 980px;
+  background-color: #FFD140;
+  margin: 0 auto;
+  margin-top: 85px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-info {
+  max-width: 980px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+.about .about-info .info-header .header-text {
+  font-family: "Futura";
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.about .about-info .info-header hr {
+  width: 150px;
+  height: 2px;
+  background-color: #000;
+  border: 1px solid;
+}
+.about .about-info .info-description {
+  max-width: 980px;
+  height: 100px;
+  margin: 0 auto;
+  font-family: "Futura Italic";
+}
+
+@media all and (max-width: 1000px) {
+  .about .about-info {
+    align-items: center;
+  }
+  .about .about-info .info-description {
+    text-align: center;
+    padding: 10px;
+  }
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.gallery .gallery-header {
+  width: 980px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 65px;
+}
+.gallery .gallery-header .gallery-text {
+  font-family: "Futura";
+  font-size: 25px;
+}
+.gallery .gallery-header hr {
+  width: 85px;
+  border: 1px solid;
+}
+.gallery .gallery-row1 {
+  width: 980px;
+  min-height: 187px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-row1 a {
+  text-decoration: none;
+}
+.gallery .gallery-row1 a .img-1 {
+  width: 489px;
+  height: 187px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../images/gallery/1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery .gallery-row1 a .img-2 {
+  width: 187px;
+  height: 187px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8)), url("../images/gallery/2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery .gallery-row1 a .img-3 {
+  width: 263px;
+  height: 187px;
+  background-image: linear-gradient(rgba(8, 173, 105, 0.8), rgba(8, 173, 105, 0.8)), url("../images/gallery/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery .gallery-row2 {
+  width: 980px;
+  min-height: 306px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-row2 a {
+  text-decoration: none;
+}
+.gallery .gallery-row2 a .img-1 {
+  width: 603px;
+  height: 306px;
+  background-image: linear-gradient(rgba(84, 13, 110, 0.8), rgba(84, 13, 110, 0.8)), url("../images/gallery/4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery .gallery-row2 a .img-2 {
+  width: 355px;
+  height: 306px;
+  background-image: linear-gradient(rgba(59, 206, 171, 0.8), rgba(59, 206, 171, 0.8)), url("../images/gallery/5.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1000px) {
+  .gallery .gallery-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .gallery .gallery-row1 {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .gallery .gallery-row1 a .img-1 {
+    margin-bottom: 10px;
+  }
+  .gallery .gallery-row1 a .img-2 {
+    width: 489px;
+    height: 187px;
+    margin-bottom: 10px;
+  }
+  .gallery .gallery-row1 a .img-3 {
+    width: 489px;
+    height: 187px;
+    margin-bottom: 10px;
+  }
+  .gallery .gallery-row2 {
+    flex-direction: column;
+  }
+  .gallery .gallery-row2 a .img-1 {
+    width: 489px;
+    height: 187px;
+    margin-bottom: 10px;
+  }
+  .gallery .gallery-row2 a .img-2 {
+    width: 489px;
+    height: 187px;
+    margin-bottom: 10px;
+  }
+}
+.blog-info {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.blog-info .blog-banner {
+  max-width: 980px;
+  height: 300px;
+  background-color: #EE4367;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.4), rgba(238, 67, 103, 0.4)), url(../images/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blog-info .blog-banner .date-released-1 {
+  height: 155px;
+  width: 155px;
+  background-color: #EE4367;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blog-info .blog-banner .date-released-1 .one {
+  font-size: 55px;
+  font-weight: bold;
+  z-index: 98;
+  margin-top: 10px;
+}
+.blog-info .blog-banner .date-released-1 .two {
+  font-size: 31;
+}
+.blog-info .header-one .header {
+  font-family: "Futura";
+  font-size: 15px;
+  color: #EE4367;
+  margin-bottom: 30px;
+}
+.blog-info .header-one .text {
+  font-family: "Futura";
+  font-size: 15px;
+  margin-bottom: 33px;
+}
+
+@media all and (max-width: 1000px) {
+  .blog-info .header-one {
+    text-align: center;
+    padding: 10px;
+  }
+}
+.gallery-info-1 {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.gallery-info-1 .gallery-banner {
+  max-width: 980px;
+  height: 400px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/gallery/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+.gallery-info-1 .gallery-description .header {
+  display: flex;
+  align-items: left;
+  margin-top: -300px;
+  color: #FFD140;
+  text-shadow: 2px 2px 10px #b7962d;
+}
+.gallery-info-1 .gallery-description .header .number {
+  font-family: "Futura";
+  font-size: 300px;
+}
+.gallery-info-1 .gallery-description .header .title {
+  font-family: "Futura";
+  font-size: 115px;
+  margin-top: 185px;
+}
+.gallery-info-1 .gallery-description .description {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-info-1 .gallery-description .description .text {
+  width: 450px;
+  height: 133px;
+  font-family: "Futura";
+  font-size: 16px;
+}
+
+.gallery-info-2 {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.gallery-info-2 .gallery-banner {
+  max-width: 980px;
+  height: 400px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(../images/gallery/2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+.gallery-info-2 .gallery-description .header {
+  display: flex;
+  align-items: left;
+  margin-top: -300px;
+  color: #EE4367;
+  text-shadow: 2px 2px 10px #a22c46;
+}
+.gallery-info-2 .gallery-description .header .number {
+  font-family: "Futura";
+  font-size: 300px;
+}
+.gallery-info-2 .gallery-description .header .title {
+  font-family: "Futura";
+  font-size: 115px;
+  margin-top: 185px;
+}
+.gallery-info-2 .gallery-description .description {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-info-2 .gallery-description .description .text {
+  width: 450px;
+  height: 133px;
+  font-family: "Futura";
+  font-size: 16px;
+}
+
+.gallery-info-3 {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.gallery-info-3 .gallery-banner {
+  max-width: 980px;
+  height: 400px;
+  background-image: linear-gradient(rgba(8, 173, 105, 0.7), rgba(8, 173, 105, 0.7)), url(../images/gallery/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+.gallery-info-3 .gallery-description .header {
+  display: flex;
+  align-items: left;
+  margin-top: -300px;
+  color: #08AD69;
+  text-shadow: 2px 2px 10px #067044;
+}
+.gallery-info-3 .gallery-description .header .number {
+  font-family: "Futura";
+  font-size: 300px;
+}
+.gallery-info-3 .gallery-description .header .title {
+  font-family: "Futura";
+  font-size: 115px;
+  margin-top: 185px;
+}
+.gallery-info-3 .gallery-description .description {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-info-3 .gallery-description .description .text {
+  width: 450px;
+  height: 133px;
+  font-family: "Futura";
+  font-size: 16px;
+}
+
+.gallery-info-4 {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.gallery-info-4 .gallery-banner {
+  max-width: 980px;
+  height: 400px;
+  background-image: linear-gradient(rgba(84, 13, 110, 0.7), rgba(84, 13, 110, 0.7)), url(../images/gallery/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+.gallery-info-4 .gallery-description .header {
+  display: flex;
+  align-items: left;
+  margin-top: -300px;
+  color: #540D6E;
+  text-shadow: 2px 2px 10px #3a084c;
+}
+.gallery-info-4 .gallery-description .header .number {
+  font-family: "Futura";
+  font-size: 300px;
+}
+.gallery-info-4 .gallery-description .header .title {
+  font-family: "Futura";
+  font-size: 115px;
+  margin-top: 185px;
+}
+.gallery-info-4 .gallery-description .description {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-info-4 .gallery-description .description .text {
+  width: 450px;
+  height: 133px;
+  font-family: "Futura";
+  font-size: 16px;
+}
+
+.gallery-info-5 {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.gallery-info-5 .gallery-banner {
+  max-width: 980px;
+  height: 400px;
+  background-image: linear-gradient(rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(../images/gallery/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+.gallery-info-5 .gallery-description .header {
+  display: flex;
+  align-items: left;
+  margin-top: -300px;
+  color: #3BCEAB;
+  text-shadow: 2px 2px 10px #278872;
+}
+.gallery-info-5 .gallery-description .header .number {
+  font-family: "Futura";
+  font-size: 300px;
+}
+.gallery-info-5 .gallery-description .header .title {
+  font-family: "Futura";
+  font-size: 115px;
+  margin-top: 185px;
+}
+.gallery-info-5 .gallery-description .description {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-info-5 .gallery-description .description .text {
+  width: 450px;
+  height: 133px;
+  font-family: "Futura";
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,180 @@
+.gallery{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .gallery-header{
+
+        width: $header-content-width;
+        height: 40px;
+
+        margin-bottom: 30px;
+        margin-top: 65px;
+
+        
+        
+        //background-color: purple;
+        .gallery-text{
+
+            font-family: $main-font;
+            font-size: 25px;
+            
+
+        }
+        hr{
+            width: 85px;
+            border: 1px solid;
+
+            
+        }
+    }
+
+    .gallery-row1{
+
+        width: $header-content-width;
+        min-height: 187px;
+
+        margin-bottom: 20px;
+
+        //background-color: green;
+
+        display: flex;
+        //flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+
+            .img-1{
+                width: 489px;
+                height: 187px;
+    
+                background-image: linear-gradient(rgba($yellow-color, .8),rgba($yellow-color, .8)),url('../images/gallery/1.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        a{
+            .img-2{
+                width: 187px;
+                height: 187px;
+    
+                background-image: linear-gradient(rgba($pink-color, .8),rgba($pink-color, .8)),url('../images/gallery/2.jpeg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        a{
+            .img-3{
+                width: 263px;
+                height: 187px;
+    
+                background-image: linear-gradient(rgba($dark-teal-color, .8),rgba($dark-teal-color, .8)),url('../images/gallery/3.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .gallery-row2{
+
+        width: $header-content-width;
+        min-height: 306px;
+
+        //background-color: blue;
+
+        display: flex;
+        //flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+
+            .img-1{
+                width: 603px;
+                height: 306px;
+    
+                background-image: linear-gradient(rgba($purple-color, .8),rgba($purple-color, .8)),url('../images/gallery/4.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        a{
+            .img-2{
+                width: 355px;
+                height: 306px;
+    
+                background-image: linear-gradient(rgba($light-teal-color, .8),rgba($light-teal-color, .8)),url('../images/gallery/5.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px){
+    .gallery{
+        .gallery-header{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .gallery-row1{
+            flex-direction: column;
+            margin-bottom: 0px;
+
+            a{
+                .img-1{
+                    margin-bottom: 10px;
+                }
+            }
+
+            a{
+                .img-2{
+                    width: 489px;
+                    height: 187px;
+
+                    margin-bottom: 10px;
+                }
+            }
+            a{
+                .img-3{
+                    width: 489px;
+                    height: 187px;
+
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .gallery-row2{
+            flex-direction: column;
+            a{
+                .img-1{
+                    width: 489px;
+                    height: 187px;
+
+                    margin-bottom: 10px;
+                }
+            }
+            a{
+                .img-2{
+                    width: 489px;
+                    height: 187px;
+
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
